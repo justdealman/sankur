@@ -1,0 +1,80 @@
+.footer {
+	position: relative;
+
+	&__row {
+		display: flex;
+		align-items: flex-end;
+		min-height: 325px;
+		color: @colorLight;
+		text-align: center;
+		padding-top: 54px;
+		padding-bottom: 54px;
+
+		@media @tablet {
+			min-height: 0;
+			padding-top: 36px;
+			padding-bottom: 36px;
+		}
+
+		@media @small {
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+
+		a {
+			color: @colorLight;
+		}
+	}
+
+	&__content {
+		width: 100%;
+
+		> :first-child {
+			margin-top: 0;
+		}
+	}
+
+	&__btn {
+		display: inline-block;
+		color: @colorLight;
+		font-size: 13px;
+		line-height: 22px;
+		font-weight: 600;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 8px 30px;
+		margin-top: 8px;
+		background-color: #c5b358;
+		border-radius: 5px;
+		transition: background-color .2s ease;
+
+		&:hover {
+			background-color: darken(#c5b358, 10%);
+		}
+	}
+
+	&__text {
+		display: block;
+		font-size: 26px;
+		line-height: 34px;
+		font-weight: bold;
+		margin-top: 8px;
+
+		@media @tablet {
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		@media @mobile {
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+
+	&__tip {
+		display: block;
+		font-size: 11px;
+		line-height: 14px;
+		font-weight: 500;
+	}
+}

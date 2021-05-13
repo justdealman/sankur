@@ -1,0 +1,336 @@
+html {
+	height: 100%;
+
+	* {
+		max-height: 1000000px;
+		vertical-align: top;
+		box-sizing: border-box;
+
+		&:before,
+		&:after {
+			vertical-align: top;
+			box-sizing: border-box;
+		}
+	}
+}
+
+body {
+	min-width: 320px;
+	width: 100%;
+	height: 100%;
+	color: @colorBase;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: @fMontserrat;
+	padding: 0;
+	margin: 0;
+	background: #ffffff;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+}
+
+p {
+	font-size: 18px;
+	line-height: 22px;
+	text-indent: 0;
+	padding: 0;
+	margin: 0 0 22px;
+}
+
+table {
+	margin: 0 0 1.5em;
+	border-collapse: collapse;
+
+	td {
+		padding: 0;
+	}
+}
+
+:focus {
+	outline: none;
+}
+
+img {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+a {
+	color: @colorLink;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+form {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	margin: 0 0 10px 20px;
+	padding: 0;
+
+	li {
+		padding: 0;
+		list-style: none;
+	}
+}
+
+ol {
+	margin: 0 0 10px 20px;
+	padding: 0;
+
+	li {
+		padding: 0 0 0 16px;
+	}
+}
+
+input,
+select,
+textarea {
+	color: @colorBase;
+	font-size: 16px;
+	font-family: @fMontserrat;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+button {
+	color: @colorLink;
+	font-family: @fMontserrat;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: 0;
+}
+
+.img {
+	&-cover,
+	&-contain {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+  	&-cover {
+		object-fit: cover;
+	}
+
+	&-contain {
+		object-fit: contain;
+	}
+}
+
+.bg {
+	&-cover,
+	&-contain {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-cover {
+		object-fit: cover;
+	}
+
+	&-contain {
+		object-fit: contain;
+	}
+}
+
+.container {
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	max-width: 1229px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0 auto;
+
+	@media @tablet {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media @mobile {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.bg-foot {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 1640px;
+	margin-left: -820px;
+
+	&_t {
+		bottom: auto;
+		top: 0;
+	}
+
+	@media @extra {
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+.btn {
+	display: inline-block;
+	color: @colorLight;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	background-color: #15C45B;
+	border-radius: 5px;
+	transition: all .1s ease;
+
+	&:hover {
+		background-color: darken(#15C45B, 5%);
+	}
+
+	&_big {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 13px 32px 11px;
+	}
+
+	&_lg,
+	&_md {
+		box-shadow: 0 6px 10px #BDBDBD;
+	}
+
+	&_lg {
+		min-width: 200px;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 10px 16px;
+	}
+
+	&_md {
+		font-size: 14px;
+		line-height: 16px;
+		padding: 8px 16px;
+	}
+
+	&_wide {
+		width: 100%;
+	}
+
+	&_dark {
+		box-shadow: 0 6px 10px #3B8157;
+
+		&:hover {
+			box-shadow: 0 6px 20px #3B8157;
+		}
+	}
+}
+
+.title {
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+
+	@media @tablet {
+		font-size: 26px;
+		line-height: 32px;
+		margin-bottom: 32px;
+	}
+
+	@media @small {
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 24px;
+	}
+}
+
+.link {
+	position: relative;
+	display: block;
+	padding: 13px 72px 12px 24px;
+	background-color: #ffffff;
+	border: 1px solid #AAAAAA;
+	box-sizing: border-box;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	transition: box-shadow .2s ease;
+
+	@media @tablet {
+		padding: 10px 16px 9px;
+
+		@media @mobile {
+			padding: 7px 16px;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+	}
+
+	&__text {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 500;
+
+		@media @tablet {
+			font-size: 16px;
+		}
+
+		@media @mobile {
+			font-size: 15px;
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		width: 23px;
+		height: 23px;
+		stroke: @colorBase;
+		margin-top: -10px;
+
+		@media @tablet {
+			display: none;
+		}
+	}
+
+	&.is-active {
+		background-color: #9AEEBB;
+
+		svg {
+			transform: rotate(-90deg);
+		}
+	}
+}

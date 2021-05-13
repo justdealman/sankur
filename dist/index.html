@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>Санаторно-курортное лечение</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link rel="preload" href="./pic/welcome.jpg" as="image">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="#" class="header-logo">
+						<img src="data:image/png;base64,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
+" width="42" height="39" alt="">
+					</a>
+					<div class="header-menu js-menu">
+						<span></span>
+					</div>
+					<div class="header-calendar">
+						<svg class="header-calendar__icon" width="28" height="28">
+							<use xlink:href="./img/sprite.svg#calendar"></use>
+						</svg>
+					</div>
+					<a href="tel:+78007075182" class="header-phone">8 800 707 5182</a>
+					<div class="nav">
+						<a href="#" class="nav__item">О курорте</a>
+						<a href="#" class="nav__item">Пресс-центр</a>
+						<a href="#" class="nav__item">Инфраструктура</a>
+						<a href="#" class="nav__item">Путевки и цены</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="welcome">
+			<div class="container welcome__row">
+				<div class="welcome__content">
+					<h1 class="welcome__title">Санаторно-курортное лечение</h1>
+					<div class="welcome-list">
+						<div class="welcome-list__col">
+							<div class="welcome-list__item">
+								<div class="welcome-list__icon">
+									<svg width="28" height="28">
+										<use xlink:href="./img/sprite.svg#calendar"></use>
+									</svg>
+								</div>
+								<span class="welcome-list__text">от 12 дней</span>
+							</div>
+						</div>
+						<div class="welcome-list__col">
+							<div class="welcome-list__item">
+								<div class="welcome-list__icon">
+									<svg width="36" height="29">
+										<use xlink:href="./img/sprite.svg#service"></use>
+									</svg>
+								</div>
+								<span class="welcome-list__text">4-разовое питание</span>
+							</div>
+						</div>
+						<div class="welcome-list__col">
+							<div class="welcome-list__item">
+								<div class="welcome-list__icon">
+									<svg width="33" height="33">
+										<use xlink:href="./img/sprite.svg#heartbeat"></use>
+									</svg>
+								</div>
+								<span class="welcome-list__text">5-7 процедур в день</span>
+							</div>
+						</div>
+						<div class="welcome-list__col">
+							<div class="welcome-list__item">
+								<div class="welcome-list__icon">
+									<svg width="33" height="33">
+										<use xlink:href="./img/sprite.svg#star"></use>
+									</svg>
+								</div>
+								<span class="welcome-list__text">номера 3-4 звезды</span>
+							</div>
+						</div>
+					</div>
+					<span class="welcome__price">от <span>4 800</span> руб/СУТКИ</span>
+					<span class="btn btn_big btn_dark welcome__btn">Оставить заявку</span>
+				</div>
+			</div>
+			<img src="./pic/welcome.jpg" class="img-cover welcome__bg" width="1640" height="607" alt="">
+		</section>
+		<nav class="anchors">
+			<div class="container">
+				<div class="anchors__row">
+					<div class="anchors__col">
+						<span class="anchors__item js-scroll-to" data-id="1">лечение</span>
+					</div>
+					<div class="anchors__col">
+						<span class="anchors__item is-active js-scroll-to" data-id="2">проживание</span>
+					</div>
+					<div class="anchors__col">
+						<span class="anchors__item js-scroll-to" data-id="3">питание</span>
+					</div>
+					<div class="anchors__col">
+						<span class="anchors__item js-scroll-to" data-id="4">развлечение</span>
+					</div>
+					<div class="anchors__col">
+						<span class="anchors__item js-scroll-to" data-id="5">отзывы</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="about">
+			<div class="container">
+				<div class="about__row">
+					<h2 class="title">Путевка с лечением</h2>
+					<div class="about-content">
+						<div class="about-content__col about-content__col_text">
+							<p>Санаторно-курортная путевка – идеальный вариант для тех, кто хочет серьезно заняться своим здоровьем. Отдыха я в санаториях сети «Курорт Белокуриха» по этому типу путевки, вы сможете снизить проявления имеющихся заболеваний, восстановить силы организма, укрепить иммунитет и предотвратить возникновение болезней.</p>
+							<p>Высококвалифицированные врачи подберут для вас индивидуальный комплекс лечения, чтобы вы забыли о недугах, почувствовали себя бодрыми и счастливыми.</p>
+						</div>
+						<div class="about-content__col about-content__col_photo">
+							<img src="./pic/about.png" class="about-content__photo" width="398" height="441" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<svg width="1640" height="331" class="bg-foot about__bg" preserveAspectRatio="none" viewBox="0 0 1640 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.0708008 86.1928L68.2625 104.177C136.596 122.161 273.263 158.128 409.929 146.139C546.596 134.15 683.263 74.2035 819.929 38.2356C956.596 2.26773 1093.26 -9.72156 1229.93 8.26238C1366.6 26.2463 1503.26 74.2035 1571.6 98.1821L1639.93 122.161V302H1571.6C1503.26 302 1366.6 302 1229.93 302C1093.26 302 956.596 302 819.929 302C683.263 302 546.596 302 409.929 302C273.263 302 136.596 302 68.2625 302H-0.0708008V86.1928Z" fill="url(#about0_linear)" fill-opacity="0.3" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M1639.93 115.193L1539.85 133.177C1439.77 151.161 1239.61 187.128 1039.45 175.139C839.286 163.15 639.126 103.203 438.965 67.2356C238.804 31.2677 38.6432 19.2784 -161.518 37.2624C-361.679 55.2463 -561.839 103.203 -661.92 127.182L-762 151.161V331H-661.92C-561.839 331 -361.679 331 -161.518 331C38.6432 331 238.804 331 438.965 331C639.126 331 839.286 331 1039.45 331C1239.61 331 1439.77 331 1539.85 331H1639.93V115.193Z" fill="url(#about1_linear)" fill-opacity="0.3" />
+				<defs>
+					<linearGradient id="about0_linear" x1="438.965" y1="29" x2="438.965" y2="331" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9DC9EA" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="about1_linear" x1="438.965" y1="29" x2="438.965" y2="331" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9DC9EA" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+				</defs>
+			</svg>
+		</section>
+		<section class="set">
+			<div class="container">
+				<div class="set__row">
+					<h2 class="title">в путевку включено</h2>
+					<div class="set-content">
+						<div class="set-content__col">
+							<div class="set-slider js-slider-set">
+								<div class="set-slider__col">
+									<div class="set-slider__item">
+										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
+									</div>
+								</div>
+								<div class="set-slider__col">
+									<div class="set-slider__item">
+										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
+									</div>
+								</div>
+								<div class="set-slider__col">
+									<div class="set-slider__item">
+										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
+									</div>
+								</div>
+								<div class="set-slider__col">
+									<div class="set-slider__item">
+										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="set-content__col">
+							<ul class="set-list">
+								<li> Консультаций<br> высококвалифицированных врачей, в&nbsp;том числе редких специальностей. <div class="set-list__icon">
+										<svg width="28" height="28">
+											<use xlink:href="./img/sprite.svg#calendar"></use>
+										</svg>
+									</div>
+								</li>
+								<li> От 5 наименований лечебных процедур по&nbsp;Вашему<br> основному заболеванию. <div class="set-list__icon">
+										<svg width="28" height="28">
+											<use xlink:href="./img/sprite.svg#calendar"></use>
+										</svg>
+									</div>
+								</li>
+								<li> 1-2 наименований лечебных<br> процедур по<br> сопутствующему заболеванию. <div class="set-list__icon">
+										<svg width="28" height="28">
+											<use xlink:href="./img/sprite.svg#calendar"></use>
+										</svg>
+									</div>
+								</li>
+								<li> Обследований, результаты которых признаются<br> всеми центрами России. <div class="set-list__icon">
+										<svg width="28" height="28">
+											<use xlink:href="./img/sprite.svg#calendar"></use>
+										</svg>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="services">
+			<div class="container">
+				<div class="services__row">
+					<h2 class="title">Направления лечения</h2>
+					<div class="services-list">
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<svg width="74" height="60">
+										<use xlink:href="./img/sprite.svg#service-1"></use>
+									</svg>
+								</div>
+								<span class="services-item__text">Гастроэнтерология</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<svg width="63" height="58">
+										<use xlink:href="./img/sprite.svg#service-2"></use>
+									</svg>
+								</div>
+								<span class="services-item__text">Сердечно-сосудистая система</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<svg width="66" height="66">
+										<use xlink:href="./img/sprite.svg#service-3"></use>
+									</svg>
+								</div>
+								<span class="services-item__text">Опорно-двигательный аппарат</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<img src="./pic/service-4.png" width="80" height="64" alt="">
+								</div>
+								<span class="services-item__text">Гинекология</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<img src="./pic/service-5.png" width="76" height="67" alt="">
+								</div>
+								<span class="services-item__text">Нервная система</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<img src="./pic/service-6.png" width="65" height="65" alt="">
+								</div>
+								<span class="services-item__text">Урология</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<img src="./pic/service-7.png" width="50" height="69" alt="">
+								</div>
+								<span class="services-item__text">Эндокринная система</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<img src="./pic/service-8.png" width="66" height="66" alt="">
+								</div>
+								<span class="services-item__text">Психотерапия</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<img src="./pic/service-9.png" width="48" height="70" alt="">
+								</div>
+								<span class="services-item__text">Заболевания кожи</span>
+							</div>
+						</div>
+						<div class="services-list__col">
+							<div class="services-item">
+								<div class="services-item__icon">
+									<img src="./pic/service-10.png" width="65" height="65" alt="">
+								</div>
+								<span class="services-item__text">Педиатрия</span>
+							</div>
+						</div>
+					</div>
+					<div class="services-about">
+						<div class="services-about__row">
+							<div class="services-about__col services-about__col_info">
+								<img src="./pic/service-about-1.jpg" width="316" height="173" alt="" class="services-about__photo">
+								<button class="btn btn_md btn_wide services-about__btn">Оставить заявку</button>
+							</div>
+							<div class="services-about__col services-about__col_content">
+								<h3 class="services-about__title">Гастроэнтерология</h3>
+								<span class="services-about__text">Результатом является улучшение моторной и секреторной функции желудка, желчевыводящих путей, кишечника, что способствует нормализации функций органов пищеварения.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<svg width="1640" height="1489" class="bg-foot services__bg" preserveAspectRatio="none" viewBox="0 0 1640 1489" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-1334.12 595.371L-1198 596.297C-1061.88 597.224 -789.643 599.078 -526.245 543.734C-262.846 488.391 -8.28659 375.852 250.692 291.91C509.672 207.969 773.07 152.626 1041.99 133.031C1310.91 113.435 1585.36 129.588 1722.58 137.664L1859.81 145.74L1892.95 360.227L1760.15 380.749C1627.34 401.271 1361.74 442.315 1096.13 483.359C830.52 524.403 564.912 565.447 299.304 606.491C33.6962 647.535 -231.912 688.579 -497.52 729.623C-763.128 770.667 -1028.74 811.711 -1161.54 832.233L-1294.34 852.755L-1334.12 595.371Z" fill="url(#services0_linear)" fill-opacity="0.3" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-1400.61 672.304L-1269.88 672.931C-1139.14 673.559 -877.672 674.814 -625.567 618.857C-373.462 562.901 -130.723 449.733 116.7 365.171C364.122 280.609 616.227 224.653 874.186 204.454C1132.14 184.254 1395.96 199.812 1527.86 207.591L1659.77 215.37L1694.89 429.912L1567.67 450.739C1440.44 471.566 1186 513.219 931.55 554.873C677.104 596.526 422.657 638.18 168.211 679.833C-86.2358 721.487 -340.682 763.14 -595.129 804.794C-849.575 846.448 -1104.02 888.101 -1231.24 908.928L-1358.47 929.755L-1400.61 672.304Z" fill="url(#services1_linear)" fill-opacity="0.3" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-1005.8 362.189L-885.782 414.04C-765.767 465.892 -525.737 569.595 -271.885 616.997C-18.0322 664.399 249.643 655.501 510.407 674.753C771.171 694.004 1025.02 741.407 1270.24 823.997C1515.45 906.587 1752.02 1024.37 1870.31 1083.25L1988.6 1142.14L1936.76 1353.27L1811.56 1322.53C1686.37 1291.79 1435.97 1230.32 1185.57 1168.84C935.175 1107.36 684.778 1045.88 434.381 984.407C183.984 922.929 -66.4126 861.452 -316.809 799.974C-567.206 738.497 -817.603 677.019 -942.801 646.281L-1068 615.542L-1005.8 362.189Z" fill="url(#services2_linear)" fill-opacity="0.3" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M2197.49 1038.28L-863.509 1488.96L-970 765.683L2091 315L2197.49 1038.28Z" fill="url(#services3_linear)" fill-opacity="0.3" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M2197.49 1038.28L-863.509 1488.96L-970 765.683L2091 315L2197.49 1038.28Z" fill="url(#services4_linear)" fill-opacity="0.3" />
+				<path d="M-863.509 1488.96L2197.49 1038.28L2091 315L-970 765.683L-863.509 1488.96Z" fill="url(#services5_linear)" fill-opacity="0.3" />
+				<defs>
+					<linearGradient id="services0_linear" x1="243.646" y1="246.308" x2="299.304" y2="606.491" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9AEEBB" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="services1_linear" x1="109.233" y1="319.557" x2="168.211" y2="679.833" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9AEEBB" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="services2_linear" x1="521.428" y1="629.865" x2="434.381" y2="984.407" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9AEEBB" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="services3_linear" x1="666.538" y1="1262.58" x2="560.238" y2="540.601" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#78B4DF" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="services4_linear" x1="666.538" y1="1262.58" x2="560.238" y2="540.601" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#78B4DF" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="services5_linear" x1="666.538" y1="1262.58" x2="560.238" y2="540.601" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#78B4DF" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+				</defs>
+			</svg>
+		</div>
+		<section class="procedures">
+			<div class="container">
+				<div class="procedures__row">
+					<h2 class="title">Процедуры входящие в путевку</h2>
+					<div class="articles">
+						<div class="articles__col articles__col_nav">
+							<div class="articles-nav">
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Гастроэнтерология</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link is-active">
+										<span class="link__text">Гастроэнтерология</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Гастроэнтерология</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Гастроэнтерология</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="articles__col articles__col_content">
+							<div class="articles-content">
+								<ul class="articles-content__list">
+									<li>Микроклизмы травяным отваром</li>
+									<li>Микроклизмы лекарственным раствором</li>
+									<li>Микроклизмы с тиосульфатом натрия</li>
+									<li>Очистительная клизма</li>
+									<li>Сифонное орошение</li>
+									<li>Тюбаж (слепое зондирование)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="procedures-annotation">
+						<span class="procedures-annotation__text">Ванны с азотно-кремнистой минеральной водой с содержанием радона и процедуры с лечебной сульфидно-иловой грязью можно принимать только по путевке продолжительностью не менее 12 дней! Для назначения процедур необходима санаторно-курортная карта.</span>
+					</div>
+				</div>
+			</div>
+			<svg width="1640" height="50" class="bg-foot bg-foot_t procedures__bg" preserveAspectRatio="none" viewBox="0 0 1639 50" fill="white" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 41L811 0L1640 41V613C1640 613 1262.5 613 874 613C485.5 613 0 613 0 613V41Z" fill="#F2F2F2" />
+			</svg>
+		</section>
+		<section class="hotel">
+			<div class="container">
+				<div class="hotel__row">
+					<h2 class="title">Проживание</h2>
+					<div class="hotel-list">
+						<div class="hotel-list__col">
+							<div class="hotel-item">
+								<div class="hotel-item__photo">
+									<img src="./pic/hotel-1.jpg" class="img-cover" alt="">
+								</div>
+								<div class="hotel-item__content">
+									<span class="hotel-item__title">Престиж</span>
+									<div class="hotel-item-info">
+										<span class="hotel-item-info__elem">1 осн. место</span>
+										<span class="hotel-item-info__elem">4 доп. места</span>
+										<span class="hotel-item-info__elem">27 кв.м.</span>
+									</div>
+									<span class="hotel-item__text">Значительно увеличенная площадь этого номера позволяет с комфортом разместиться вдвоем или всей семьей.</span>
+									<div class="hotel-item-action">
+										<div class="hotel-item-action__col">
+											<span class="hotel-item__price">от 6 445 руб.</span>
+										</div>
+										<div class="hotel-item-action__col">
+											<button class="btn btn_md">Оставить заявку</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotel-list__col">
+							<div class="hotel-item">
+								<div class="hotel-item__photo">
+									<img src="./pic/hotel-2.jpg" class="img-cover" alt="">
+								</div>
+								<div class="hotel-item__content">
+									<span class="hotel-item__title">Апартаменты</span>
+									<div class="hotel-item-info">
+										<span class="hotel-item-info__elem">1 осн. место</span>
+										<span class="hotel-item-info__elem">4 доп. места</span>
+										<span class="hotel-item-info__elem">27 кв.м.</span>
+									</div>
+									<span class="hotel-item__text">Высококласный номер увеличенной площади с иднивидуальным дизайном.</span>
+									<div class="hotel-item-action">
+										<div class="hotel-item-action__col">
+											<span class="hotel-item__price">10 820 руб.</span>
+										</div>
+										<div class="hotel-item-action__col">
+											<button class="btn btn_md">Оставить заявку</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotel-list__col">
+							<div class="hotel-item">
+								<div class="hotel-item__photo">
+									<img src="./pic/hotel-1.jpg" class="img-cover" alt="">
+								</div>
+								<div class="hotel-item__content">
+									<span class="hotel-item__title">Престиж</span>
+									<div class="hotel-item-info">
+										<span class="hotel-item-info__elem">1 осн. место</span>
+										<span class="hotel-item-info__elem">4 доп. места</span>
+										<span class="hotel-item-info__elem">27 кв.м.</span>
+									</div>
+									<span class="hotel-item__text">Значительно увеличенная площадь этого номера позволяет с комфортом разместиться вдвоем или всей семьей.</span>
+									<div class="hotel-item-action">
+										<div class="hotel-item-action__col">
+											<span class="hotel-item__price">от 6 445 руб.</span>
+										</div>
+										<div class="hotel-item-action__col">
+											<button class="btn btn_md">Оставить заявку</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotel-list__col">
+							<div class="hotel-item">
+								<div class="hotel-item__photo">
+									<img src="./pic/hotel-2.jpg" class="img-cover" alt="">
+								</div>
+								<div class="hotel-item__content">
+									<span class="hotel-item__title">Апартаменты</span>
+									<div class="hotel-item-info">
+										<span class="hotel-item-info__elem">1 осн. место</span>
+										<span class="hotel-item-info__elem">4 доп. места</span>
+										<span class="hotel-item-info__elem">27 кв.м.</span>
+									</div>
+									<span class="hotel-item__text">Высококласный номер увеличенной площади с иднивидуальным дизайном.</span>
+									<div class="hotel-item-action">
+										<div class="hotel-item-action__col">
+											<span class="hotel-item__price">10 820 руб.</span>
+										</div>
+										<div class="hotel-item-action__col">
+											<button class="btn btn_md">Оставить заявку</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hotel-all">
+						<button class="btn btn_lg">Все номера</button>
+					</div>
+				</div>
+			</div>
+			<svg width="1640" height="810" class="bg-foot hotel__bg" preserveAspectRatio="none" viewBox="0 0 1640 810" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M-13.6695 795.525L1653.16 781.865L1646.87 14.4357L-19.9591 28.0964L-13.6695 795.525Z" fill="url(#hotel0_linear)" fill-opacity="0.3" />
+				<defs>
+					<linearGradient id="hotel0_linear" x1="819.688" y1="801.169" x2="813.186" y2="7.84506" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#78B4DF" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+				</defs>
+			</svg>
+		</section>
+		<section class="food">
+			<div class="container">
+				<div class="food__row">
+					<h2 class="title food__title">Питание «Шведский стол»</h2>
+					<div class="food-list">
+						<div class="food-slider js-slider-food">
+							<div class="food-slider__col">
+								<div class="food-item">
+									<div class="food-item__photo">
+										<img src="./pic/food-1.jpg" class="img-cover" width="863" height="346" alt="">
+									</div>
+									<div class="food-item__content">
+										<div class="food-item__icon">
+											<svg width="28" height="28">
+												<use xlink:href="./img/sprite.svg#calendar"></use>
+											</svg>
+										</div>
+										<span class="food-item__title">4-х разовое питание</span>
+										<span class="food-item__text">Консультаций высококвалифицированных врачей, в том числе редких специальностей.</span>
+									</div>
+								</div>
+							</div>
+							<div class="food-slider__col">
+								<div class="food-item">
+									<div class="food-item__photo">
+										<img src="./pic/food-1.jpg" class="img-cover" width="863" height="346" alt="">
+									</div>
+									<div class="food-item__content">
+										<div class="food-item__icon">
+											<svg width="28" height="28">
+												<use xlink:href="./img/sprite.svg#calendar"></use>
+											</svg>
+										</div>
+										<span class="food-item__title">4-х разовое питание</span>
+										<span class="food-item__text">Консультаций высококвалифицированных врачей, в том числе редких специальностей.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<svg width="1640" height="331" class="bg-foot food__bg" preserveAspectRatio="none" viewBox="0 0 1640 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-10 86.1928L65.0833 104.177C140.167 122.161 290.333 158.128 440.5 146.139C590.667 134.15 740.833 74.2035 891 38.2356C1041.17 2.26773 1191.33 -9.72156 1341.5 8.26238C1491.67 26.2463 1641.83 74.2035 1716.92 98.1821L1792 122.161V302H1716.92C1641.83 302 1491.67 302 1341.5 302C1191.33 302 1041.17 302 891 302C740.833 302 590.667 302 440.5 302C290.333 302 140.167 302 65.0833 302H-10V86.1928Z" fill="url(#paint0_linear)" fill-opacity="0.3" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M1726 115.193L1626.04 133.177C1526.08 151.161 1326.17 187.128 1126.25 175.139C926.333 163.15 726.417 103.203 526.5 67.2356C326.583 31.2677 126.667 19.2784 -73.25 37.2624C-273.167 55.2463 -473.083 103.203 -573.042 127.182L-673 151.161V331H-573.042C-473.083 331 -273.167 331 -73.25 331C126.667 331 326.583 331 526.5 331C726.417 331 926.333 331 1126.25 331C1326.17 331 1526.08 331 1626.04 331H1726V115.193Z" fill="url(#paint1_linear)" fill-opacity="0.3" />
+				<defs>
+					<linearGradient id="paint0_linear" x1="891" y1="0" x2="891" y2="302" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9AEEBB" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="paint1_linear" x1="526.5" y1="29" x2="526.5" y2="331" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9DC9EA" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+				</defs>
+			</svg>
+		</section>
+		<section class="rest">
+			<div class="container">
+				<div class="rest__row">
+					<h2 class="title">Отдых и развлечения</h2>
+					<div class="articles">
+						<div class="articles__col articles__col_nav">
+							<div class="articles-nav">
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Терренкуры</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link is-active">
+										<span class="link__text">Теннисные корты</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Тренажерные заллы</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Волейбольные площадки</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Спортивные турниры</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Прокат спортинвенторя</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Ледовые катки</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="articles-nav__item">
+									<a href="#" class="link">
+										<span class="link__text">Горные лыжи</span>
+										<svg class="link__icon" width="23" height="23">
+											<use xlink:href="./img/sprite.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="articles__col articles__col_content">
+							<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+							<div class="articles-content">
+								<h3 class="articles-content__title">Терренкуры</h3>
+								<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+								<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="family">
+			<div class="container">
+				<div class="family__row">
+					<h2 class="title family__title">Путевка для всех</h2>
+					<div class="family-list">
+						<div class="family-list__col">
+							<img src="./pic/family-1.jpg" width="542" height="362" class="family__pic" alt="">
+						</div>
+						<div class="family-list__col">
+							<p>Укрепить здоровье в наших санаториях можно всей семьей. Маленькие гости могут принимать процедуры уже с 4-х лет. Им назначают физиолечение, ванны и массажи по специальным детским методикам, общеукрепляющие процедуры. Пожилым отдыхающим показаны процедуры с азотно-кремнистой водой – она не дает крови сгущаться, снимает воспаление стенок сосудов, снижает давление.</p>
+							<p>Взрослым гостям санаторно-курортный отдых со множеством оздоровительных процедур поможет предотвратить развитие заболеваний и улучшить эмоциональный фон.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<svg width="1640" height="346" class="bg-foot family__bg" preserveAspectRatio="none" viewBox="0 0 1640 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-60 130.193L15.0833 148.177C90.1667 166.161 240.333 202.128 390.5 190.139C540.667 178.15 690.833 118.203 841 82.2356C991.167 46.2677 1141.33 34.2784 1291.5 52.2624C1441.67 70.2463 1591.83 118.203 1666.92 142.182L1742 166.161V346H1666.92C1591.83 346 1441.67 346 1291.5 346C1141.33 346 991.167 346 841 346C690.833 346 540.667 346 390.5 346C240.333 346 90.1667 346 15.0833 346H-60V130.193Z" fill="url(#family0_linear)" fill-opacity="0.3" />
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M806 93.3279L742.292 112.801C678.583 132.273 551.167 171.219 423.75 158.237C296.333 145.255 168.917 80.3461 41.5 41.4008C-85.9166 2.45546 -213.333 -10.5263 -340.75 8.94635C-468.167 28.419 -595.583 80.3461 -659.292 106.31L-723 132.273V327H-659.292C-595.583 327 -468.167 327 -340.75 327C-213.333 327 -85.9166 327 41.5 327C168.917 327 296.333 327 423.75 327C551.167 327 678.583 327 742.292 327H806V93.3279Z" fill="url(#family1_linear)" fill-opacity="0.3" />
+				<defs>
+					<linearGradient id="family0_linear" x1="841" y1="44" x2="841" y2="346" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9AEEBB" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+					<linearGradient id="family1_linear" x1="41.5" y1="0" x2="41.5" y2="327" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#9DC9EA" />
+						<stop offset="1" stop-color="#9AEEBB" stop-opacity="0" />
+					</linearGradient>
+				</defs>
+			</svg>
+		</section>
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews__row">
+					<h2 class="title reviews__title">Отзывы</h2>
+					<div class="reviews-list">
+						<div class="reviews-list__col">
+							<div class="reviews-item">
+								<div class="reviews-photo">
+									<div class="reviews-photo__inner">
+										<img src="./pic/reviews-1.jpg" width="115" height="115" alt="" class="img-cover">
+									</div>
+								</div>
+								<div class="reviews-content reviews-content_blue">
+									<span class="reviews-content__text">«Замечательные медицинские процедуры»</span>
+									<span class="reviews-content__name">Олег Сафонов, руководитель Ростуризма</span>
+								</div>
+							</div>
+						</div>
+						<div class="reviews-list__col">
+							<div class="reviews-item">
+								<div class="reviews-photo">
+									<div class="reviews-photo__inner">
+										<img src="./pic/reviews-2.jpg" width="114" height="115" alt="" class="img-cover">
+									</div>
+								</div>
+								<div class="reviews-content reviews-content_green">
+									<span class="reviews-content__text">«Завидую тем, кто здесь окажется после меня, ребята и девчата, вам повезло! Ваш Д.К.»</span>
+									<span class="reviews-content__name">Дмитий Крылов, телеведущий</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews-all">
+						<button class="btn btn_lg">Все отзывы</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__content">
+						<span class="footer__text">Забронируйте путевку прямо сейчас</span>
+						<button class="footer__btn">Забронировать</button>
+						<span class="footer__text"><a href="tel:+78007075182">8-800-707-51-82</a></span>
+						<span class="footer__tip">Звонок бесплатный на территории России</span>
+					</div>
+				</div>
+			</div>
+			<img src="./img/footer-bg.jpg" width="1637" height="325" alt="" class="img-cover">
+		</footer>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

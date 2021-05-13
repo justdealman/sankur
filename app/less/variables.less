@@ -1,0 +1,35 @@
+@colorBase: #000000;
+@colorGrey: #4B4B4B;
+@colorLink: #5A5A5A;
+@colorLight: #FFFFFF;
+@colorBlue: #70BAEF;
+
+@fMontserrat: ~'"Montserrat", sans-serif';
+@fRoboto: ~'"Roboto", sans-serif';
+
+@imgUrl: '../img';
+@picsUrl: '../pic';
+
+@notebook: ~'(max-width: 1229px)';
+@tablet: ~'(max-width: 991px)';
+@mobile: ~'(max-width: 767px)';
+@small: ~'(max-width: 575px)';
+@extra: ~'(min-width: 1641px)';
+
+.placeholder(@color) {
+	::-webkit-input-placeholder {
+		color: @color;
+	}
+
+	:-moz-placeholder {
+		color: @color;
+	}
+
+	::-moz-placeholder {
+		color: @color;
+	}
+
+	:-ms-input-placeholder {
+		color: @color;
+	}
+}
