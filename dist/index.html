@@ -31,7 +31,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="welcome">
+		<section class="welcome bg-cover" style="background-image: url('./pic/welcome.jpg')">
 			<div class="container welcome__row">
 				<div class="welcome__content">
 					<h1 class="welcome__title">Санаторно-курортное лечение</h1>
@@ -81,7 +81,6 @@
 					<span class="btn btn_big btn_dark welcome__btn">Оставить заявку</span>
 				</div>
 			</div>
-			<img src="./pic/welcome.jpg" class="img-cover welcome__bg" width="1640" height="607" alt="">
 		</section>
 		<nav class="anchors">
 			<div class="container">
@@ -142,24 +141,16 @@
 						<div class="set-content__col">
 							<div class="set-slider js-slider-set">
 								<div class="set-slider__col">
-									<div class="set-slider__item">
-										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
-									</div>
+									<div class="set-slider__item bg-cover" style="background-image: url('./pic/set.jpg')"></div>
 								</div>
 								<div class="set-slider__col">
-									<div class="set-slider__item">
-										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
-									</div>
+									<div class="set-slider__item bg-cover" style="background-image: url('./pic/set.jpg')"></div>
 								</div>
 								<div class="set-slider__col">
-									<div class="set-slider__item">
-										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
-									</div>
+									<div class="set-slider__item bg-cover" style="background-image: url('./pic/set.jpg')"></div>
 								</div>
 								<div class="set-slider__col">
-									<div class="set-slider__item">
-										<img src="./pic/set.jpg" class="img-cover" width="569" height="379" alt="">
-									</div>
+									<div class="set-slider__item bg-cover" style="background-image: url('./pic/set.jpg')"></div>
 								</div>
 							</div>
 						</div>
@@ -340,53 +331,96 @@
 			<div class="container">
 				<div class="procedures__row">
 					<h2 class="title">Процедуры входящие в путевку</h2>
-					<div class="articles">
+					<div class="articles" data-tabs>
 						<div class="articles__col articles__col_nav">
 							<div class="articles-nav">
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link is-active" data-link="1">
 										<span class="link__text">Гастроэнтерология</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link is-active">
+									<div class="link" data-link="2">
 										<span class="link__text">Гастроэнтерология</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link" data-link="3">
 										<span class="link__text">Гастроэнтерология</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link" data-link="4">
 										<span class="link__text">Гастроэнтерология</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="articles__col articles__col_content">
-							<div class="articles-content">
-								<ul class="articles-content__list">
-									<li>Микроклизмы травяным отваром</li>
-									<li>Микроклизмы лекарственным раствором</li>
-									<li>Микроклизмы с тиосульфатом натрия</li>
-									<li>Очистительная клизма</li>
-									<li>Сифонное орошение</li>
-									<li>Тюбаж (слепое зондирование)</li>
-								</ul>
+							<div class="articles-slider js-slider-articles">
+								<div class="articles-slider__col">
+									<div class="articles-content">
+										<ul class="articles-content__list">
+											<li>Микроклизмы травяным отваром</li>
+											<li>Микроклизмы лекарственным раствором</li>
+											<li>Микроклизмы с тиосульфатом натрия</li>
+											<li>Очистительная клизма</li>
+											<li>Сифонное орошение</li>
+											<li>Тюбаж (слепое зондирование)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<div class="articles-content">
+										<ul class="articles-content__list">
+											<li>Tab 2</li>
+											<li>Микроклизмы травяным отваром</li>
+											<li>Микроклизмы лекарственным раствором</li>
+											<li>Микроклизмы с тиосульфатом натрия</li>
+											<li>Очистительная клизма</li>
+											<li>Сифонное орошение</li>
+											<li>Тюбаж (слепое зондирование)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<div class="articles-content">
+										<ul class="articles-content__list">
+											<li>Tab 3</li>
+											<li>Микроклизмы травяным отваром</li>
+											<li>Микроклизмы лекарственным раствором</li>
+											<li>Микроклизмы с тиосульфатом натрия</li>
+											<li>Очистительная клизма</li>
+											<li>Сифонное орошение</li>
+											<li>Тюбаж (слепое зондирование)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<div class="articles-content">
+										<ul class="articles-content__list">
+											<li>Tab 4</li>
+											<li>Микроклизмы травяным отваром</li>
+											<li>Микроклизмы лекарственным раствором</li>
+											<li>Микроклизмы с тиосульфатом натрия</li>
+											<li>Очистительная клизма</li>
+											<li>Сифонное орошение</li>
+											<li>Тюбаж (слепое зондирование)</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -406,9 +440,7 @@
 					<div class="hotel-list">
 						<div class="hotel-list__col">
 							<div class="hotel-item">
-								<div class="hotel-item__photo">
-									<img src="./pic/hotel-1.jpg" class="img-cover" alt="">
-								</div>
+								<div class="hotel-item__photo bg-cover" style="background-image: url('./pic/hotel-1.jpg')"></div>
 								<div class="hotel-item__content">
 									<span class="hotel-item__title">Престиж</span>
 									<div class="hotel-item-info">
@@ -430,9 +462,7 @@
 						</div>
 						<div class="hotel-list__col">
 							<div class="hotel-item">
-								<div class="hotel-item__photo">
-									<img src="./pic/hotel-2.jpg" class="img-cover" alt="">
-								</div>
+								<div class="hotel-item__photo bg-cover" style="background-image: url('./pic/hotel-1.jpg')"></div>
 								<div class="hotel-item__content">
 									<span class="hotel-item__title">Апартаменты</span>
 									<div class="hotel-item-info">
@@ -454,9 +484,7 @@
 						</div>
 						<div class="hotel-list__col">
 							<div class="hotel-item">
-								<div class="hotel-item__photo">
-									<img src="./pic/hotel-1.jpg" class="img-cover" alt="">
-								</div>
+								<div class="hotel-item__photo bg-cover" style="background-image: url('./pic/hotel-1.jpg')"></div>
 								<div class="hotel-item__content">
 									<span class="hotel-item__title">Престиж</span>
 									<div class="hotel-item-info">
@@ -478,9 +506,7 @@
 						</div>
 						<div class="hotel-list__col">
 							<div class="hotel-item">
-								<div class="hotel-item__photo">
-									<img src="./pic/hotel-2.jpg" class="img-cover" alt="">
-								</div>
+								<div class="hotel-item__photo bg-cover" style="background-image: url('./pic/hotel-1.jpg')"></div>
 								<div class="hotel-item__content">
 									<span class="hotel-item__title">Апартаменты</span>
 									<div class="hotel-item-info">
@@ -524,9 +550,7 @@
 						<div class="food-slider js-slider-food">
 							<div class="food-slider__col">
 								<div class="food-item">
-									<div class="food-item__photo">
-										<img src="./pic/food-1.jpg" class="img-cover" width="863" height="346" alt="">
-									</div>
+									<div class="food-item__photo bg-cover" style="background-image: url('./pic/food-1.jpg')"></div>
 									<div class="food-item__content">
 										<div class="food-item__icon">
 											<svg width="28" height="28">
@@ -540,9 +564,7 @@
 							</div>
 							<div class="food-slider__col">
 								<div class="food-item">
-									<div class="food-item__photo">
-										<img src="./pic/food-1.jpg" class="img-cover" width="863" height="346" alt="">
-									</div>
+									<div class="food-item__photo bg-cover" style="background-image: url('./pic/food-1.jpg')"></div>
 									<div class="food-item__content">
 										<div class="food-item__icon">
 											<svg width="28" height="28">
@@ -577,81 +599,141 @@
 			<div class="container">
 				<div class="rest__row">
 					<h2 class="title">Отдых и развлечения</h2>
-					<div class="articles">
+					<div class="articles" data-tabs>
 						<div class="articles__col articles__col_nav">
 							<div class="articles-nav">
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link is-active" data-link="1">
 										<span class="link__text">Терренкуры</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link is-active">
+									<div class="link" data-link="2">
 										<span class="link__text">Теннисные корты</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link" data-link="3">
 										<span class="link__text">Тренажерные заллы</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link" data-link="4">
 										<span class="link__text">Волейбольные площадки</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link" data-link="5">
 										<span class="link__text">Спортивные турниры</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
-										<span class="link__text">Прокат спортинвенторя</span>
+									<div class="link" data-link="6">
+										<span class="link__text">Прокат спортинвентаря</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link" data-link="7">
 										<span class="link__text">Ледовые катки</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 								<div class="articles-nav__item">
-									<a href="#" class="link">
+									<div class="link" data-link="8">
 										<span class="link__text">Горные лыжи</span>
 										<svg class="link__icon" width="23" height="23">
 											<use xlink:href="./img/sprite.svg#arrow"></use>
 										</svg>
-									</a>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="articles__col articles__col_content">
-							<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
-							<div class="articles-content">
-								<h3 class="articles-content__title">Терренкуры</h3>
-								<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
-								<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+							<div class="articles-slider js-slider-articles">
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Терренкуры</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Теннисные корты</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Тренажерные заллы</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Волейбольные площадки</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Спортивные турниры</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Прокат спортинвентаря</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Ледовые катки</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
+								<div class="articles-slider__col">
+									<img src="./pic/rest-1.jpg" width="757" height="266" class="articles-pic" alt="">
+									<div class="articles-content">
+										<h3 class="articles-content__title">Горные лыжи</h3>
+										<p>Терренкуры – специально проложенные в горной местности дорожки с определенными углами наклона. Эти пешеходные трассы являются уникальными естественными тренажерами и лучшим средством для лечения и профилактики различных заболеваний.</p>
+										<p>А помимо лечебного эффекта, истинное удовольствие доставит общение с природой!</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

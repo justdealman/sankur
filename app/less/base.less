@@ -146,19 +146,16 @@ button {
 .bg {
 	&-cover,
 	&-contain {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
 	}
 
 	&-cover {
-		object-fit: cover;
+		background-size: cover;
 	}
 
 	&-contain {
-		object-fit: contain;
+		background-size: contain;
 	}
 }
 

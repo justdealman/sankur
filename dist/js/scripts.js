@@ -29,6 +29,42 @@ $(function() {
 		speed: 750
 	});
 
+	$('.js-slider-articles').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: false,
+		cssEase: 'ease',
+		speed: 500,
+		fade: true,
+		adaptiveHeight: true,
+		draggable: false,
+		swipe: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					fade: false
+				}
+			}
+		]
+	});
+
+	$('[data-tabs] [data-link]').on('click', function() {
+		var t = $(this);
+
+		if ( !t.hasClass('is-active') ) {
+			var id = +t.attr('data-link')-1,
+					$container = t.parents('[data-tabs]'),
+					$slider = $container.find('.js-slider-articles'),
+					$links = $container.find('[data-link]');
+
+			$links.removeClass('is-active');
+			t.addClass('is-active');
+			$slider.slick('slickGoTo', id);
+		}
+	});
+
     function startApp() {
     }
 
