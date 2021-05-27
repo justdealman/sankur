@@ -209,11 +209,11 @@
 
 		<div class="services">
 			<div class="container">
-				<div class="services__row">
+				<div class="services__row" data-services>
 					<h2 class="title">Направления лечения</h2>
 
 					<div class="services-list">
-						<div class="services-list__col">
+						<div class="services-list__col is-active" data-service-item="1">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<svg width="74" height="60">
@@ -224,7 +224,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="2">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<svg width="63" height="58">
@@ -235,7 +235,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="3">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<svg width="66" height="66">
@@ -246,7 +246,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="4">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<img src="./pic/service-4.png" width="80" height="64" alt="">
@@ -255,7 +255,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="5">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<img src="./pic/service-5.png" width="76" height="67" alt="">
@@ -264,7 +264,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="6">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<img src="./pic/service-6.png" width="65" height="65" alt="">
@@ -273,7 +273,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="7">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<img src="./pic/service-7.png" width="50" height="69" alt="">
@@ -282,7 +282,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="8">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<img src="./pic/service-8.png" width="66" height="66" alt="">
@@ -291,7 +291,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="9">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<img src="./pic/service-9.png" width="48" height="70" alt="">
@@ -300,7 +300,7 @@
 							</div>
 						</div>
 
-						<div class="services-list__col">
+						<div class="services-list__col" data-service-item="10">
 							<div class="services-item">
 								<div class="services-item__icon">
 									<img src="./pic/service-10.png" width="65" height="65" alt="">
@@ -310,14 +310,23 @@
 						</div>
 					</div>
 
-					<div class="services-about">
+					<div class="services-about" data-services-content>
 						<div class="services-about__row">
 							<div class="services-about__col services-about__col_info">
 								<img src="./pic/service-about-1.jpg" width="316" height="173" alt="" class="services-about__photo">
 								<button class="btn btn_md btn_wide services-about__btn">Оставить заявку</button>
 							</div>
 							<div class="services-about__col services-about__col_content">
-								<h3 class="services-about__title">Гастроэнтерология</h3>
+								<h3 class="services-about__title is-visible" data-service-info="1">Гастроэнтерология</h3>
+								<h3 class="services-about__title" data-service-info="2">Сердечно-сосудистая система</h3>
+								<h3 class="services-about__title" data-service-info="3">Опорно-двигательный аппарат</h3>
+								<h3 class="services-about__title" data-service-info="4">Гинекология</h3>
+								<h3 class="services-about__title" data-service-info="5">Нервная система</h3>
+								<h3 class="services-about__title" data-service-info="6">Урология</h3>
+								<h3 class="services-about__title" data-service-info="7">Эндокринная система</h3>
+								<h3 class="services-about__title" data-service-info="8">Психотерапия</h3>
+								<h3 class="services-about__title" data-service-info="9">Заболевания кожи</h3>
+								<h3 class="services-about__title" data-service-info="10">Педиатрия</h3>
 								<span class="services-about__text">Результатом является улучшение моторной и секреторной функции желудка, желчевыводящих путей, кишечника, что способствует нормализации функций органов пищеварения.</span>
 							</div>
 						</div>
@@ -846,30 +855,60 @@
 					<h2 class="title reviews__title">Отзывы</h2>
 
 					<div class="reviews-list">
-						<div class="reviews-list__col">
-							<div class="reviews-item">
-								<div class="reviews-photo">
-									<div class="reviews-photo__inner">
-										<img src="./pic/reviews-1.jpg" width="115" height="115" alt="" class="img-cover">
+						<div class="reviews-slider js-slider-reviews">
+							<div class="reviews-list__col">
+								<div class="reviews-item">
+									<div class="reviews-photo">
+										<div class="reviews-photo__inner">
+											<img src="./pic/reviews-1.jpg" width="115" height="115" alt="" class="img-cover">
+										</div>
 									</div>
-								</div>
-								<div class="reviews-content reviews-content_blue">
-									<span class="reviews-content__text">«Замечательные медицинские процедуры»</span>
-									<span class="reviews-content__name">Олег Сафонов, руководитель Ростуризма</span>
+									<div class="reviews-content reviews-content_blue">
+										<span class="reviews-content__text">«Замечательные медицинские процедуры»</span>
+										<span class="reviews-content__name">Олег Сафонов, руководитель Ростуризма</span>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="reviews-list__col">
-							<div class="reviews-item">
-								<div class="reviews-photo">
-									<div class="reviews-photo__inner">
-										<img src="./pic/reviews-2.jpg" width="114" height="115" alt="" class="img-cover">
+							<div class="reviews-list__col">
+								<div class="reviews-item">
+									<div class="reviews-photo">
+										<div class="reviews-photo__inner">
+											<img src="./pic/reviews-2.jpg" width="114" height="115" alt="" class="img-cover">
+										</div>
+									</div>
+									<div class="reviews-content reviews-content_green">
+										<span class="reviews-content__text">«Завидую тем, кто здесь окажется после меня, ребята и девчата, вам повезло! Ваш Д.К.»</span>
+										<span class="reviews-content__name">Дмитий Крылов, телеведущий</span>
 									</div>
 								</div>
-								<div class="reviews-content reviews-content_green">
-									<span class="reviews-content__text">«Завидую тем, кто здесь окажется после меня, ребята и девчата, вам повезло! Ваш Д.К.»</span>
-									<span class="reviews-content__name">Дмитий Крылов, телеведущий</span>
+							</div>
+
+							<div class="reviews-list__col">
+								<div class="reviews-item">
+									<div class="reviews-photo">
+										<div class="reviews-photo__inner">
+											<img src="./pic/reviews-1.jpg" width="115" height="115" alt="" class="img-cover">
+										</div>
+									</div>
+									<div class="reviews-content reviews-content_blue">
+										<span class="reviews-content__text">«Замечательные медицинские процедуры»</span>
+										<span class="reviews-content__name">Олег Сафонов, руководитель Ростуризма</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="reviews-list__col">
+								<div class="reviews-item">
+									<div class="reviews-photo">
+										<div class="reviews-photo__inner">
+											<img src="./pic/reviews-2.jpg" width="114" height="115" alt="" class="img-cover">
+										</div>
+									</div>
+									<div class="reviews-content reviews-content_green">
+										<span class="reviews-content__text">«Завидую тем, кто здесь окажется после меня, ребята и девчата, вам повезло! Ваш Д.К.»</span>
+										<span class="reviews-content__name">Дмитий Крылов, телеведущий</span>
+									</div>
 								</div>
 							</div>
 						</div>
